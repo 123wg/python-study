@@ -44,13 +44,13 @@ dic = {
 print(f'dic字典的值为:{dic}')
 print(f"dic的类型为:{type(dic)}")
 
-
 """
 字典的增删改查
 1.查看元素
 变量名[键名]
 变量名.get(键名) 键名不存在返回null
 2.修改
+update(字典) 类似object.assign
 3.添加
 4.删除元素
 del 字典名 删除整个字典
@@ -70,6 +70,10 @@ print(f"通过下标修改后为:{dic}")
 dic['height'] = 50
 print(f'添加height后为:{dic}')
 
+dic1 = {'type':'insert'}
+dic.update(dic1)
+print(f'dic.update(dic1)后的值为:${dic}')
+
 
 # 删除字典
 # del dic
@@ -78,4 +82,3 @@ print(f'添加height后为:{dic}')
 # 删除指定键值对,键名不存在报错
 del dic['age']
 print(f'删除age后为:{dic}')
-
