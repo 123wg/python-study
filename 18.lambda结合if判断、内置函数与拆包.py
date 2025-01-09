@@ -34,7 +34,7 @@ print('7和2的最大值为',max([7,2]))
 #zip
 list1 = [1,2,3]
 list2 = ['a','b','c'] ## 个数不一致按照短的返回
-print(zip(list1,list2))
+print('zip结果:',zip(list1,list2))
 for i in zip(list1,list2):
     print(i)
     print(type(i))
@@ -46,7 +46,7 @@ print(list(zip(list1,list2)))
 #map
 list3 = [1,2,3,4]
 mp = map(lambda _:_*5,list3)
-print(mp)
+print('map处理list3结果:',mp)
 print(list(mp))
 
 #reduce
