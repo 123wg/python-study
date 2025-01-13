@@ -4,6 +4,7 @@ print('package1的__init__.py')
 #导入保内的其它模块
 # from package1 import module1
 # from package1 import login
+from package1 import single
 
 # module1.register()
 
