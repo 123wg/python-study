@@ -32,9 +32,3 @@ for i in text:
 f.close()
 
 
-"""
-with open 代码执行完会自动调用f.close 省略关闭文件步骤
-"""
-
-with open('files/test.txt',mode='r',encoding='utf-8') as f:
-    print(f.readlines())
