@@ -43,9 +43,9 @@ from...import * 导入所有模块
 
 """
 
-import pytest
+import package1.pytest as pytest
 
 print(pytest.name)
 
-from pytest import name
+from package1.pytest import name
 print('pytest中导入的模块',name)

@@ -14,7 +14,7 @@ if __name__ == "__main__"
 3.2.文件被当做模块被其他文件导入: __name__ = 模块名
 """
 
-import pytest as pt
+import package1.pytest as pt
 print(pt.name)
 
 pt.test()
