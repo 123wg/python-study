@@ -30,7 +30,7 @@ def dance():
 if __name__ == '__main__':
     p1 = Process(target=song,name='子进程1')
     p2 = Process(target=dance,name='子进程2')
-    p1.start()
+    p1.start() #只是就绪状态 还没开始执行
    
     print(p1.name)
     print('子进程p1编号:',p1.pid)
