@@ -40,7 +40,7 @@ if __name__ == '__main__':
     t1.start()
     t2.start()
     # 阻塞主线程 join() 等子线程执行完之后结束
-    # t1.join()
-    # t2.join()
+    t1.join()
+    t2.join()
     print('全部执行完了')
 
